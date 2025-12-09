@@ -3,15 +3,18 @@
 <head>
 <style>
 
-/* Invert butterfly */
+
 .invert {
   filter: invert(100%);
 }
 
-/* Dino → Blue filter */
+
 .dino-blue {
-  filter: hue-rotate(200deg) saturate(150%) brightness(90%)
-          drop-shadow(15px 15px 10px rgba(0,0,0,0.5));
+  filter:
+    hue-rotate(200deg)
+    saturate(150%)
+    brightness(90%)
+    drop-shadow(20px 20px 15px rgba(0,0,0,0.5));
 }
 
 </style>
@@ -19,14 +22,15 @@
 
 <body>
 
-<!-- Butterfly (example) -->
-<img src="images/butterfly.png" class="invert">
 
-<!-- Dinosaur (green → blue) -->
-<img src="images/green-dino.png" class="dino-blue">
+<img src="butterfly.png" class="invert" alt="butterfly">
+
+
+<img src="dinosaur.png" class="dino-blue" alt="blue dinosaur">
 
 </body>
 </html>
+
 
 
 
