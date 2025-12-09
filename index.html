@@ -2,22 +2,31 @@
 <html>
 <head>
 <style>
-/* Invert effect for specific images */
+
+/* Invert butterfly */
 .invert {
   filter: invert(100%);
 }
+
+/* Dino → Blue filter */
+.dino-blue {
+  filter: hue-rotate(200deg) saturate(150%) brightness(90%)
+          drop-shadow(15px 15px 10px rgba(0,0,0,0.5));
+}
+
 </style>
 </head>
 
 <body>
 
-<!-- Butterfly PNG -->
-<img src="images/butterfly.png" class="invert" alt="butterfly">
+<!-- Butterfly (example) -->
+<img src="images/butterfly.png" class="invert">
 
-<!-- Dinosaur PNG -->
-<img src="images/dinosaur.png" class="invert" alt="dinosaur">
+<!-- Dinosaur (green → blue) -->
+<img src="images/green-dino.png" class="dino-blue">
 
 </body>
 </html>
+
 
 
