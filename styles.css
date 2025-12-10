@@ -72,7 +72,7 @@
     url("images/tic-tac-toe.png") center right repeat-y;   /* right border */
 
   /* size of each tile – tweak if you want them bigger/smaller */
-  background-size: 200px 200px;
+  background-size: 300px 300px;
 
   /* make the whole frame greyscale */
   filter: grayscale(100%) brightness(90%) contrast(110%);
@@ -83,6 +83,7 @@
   width: 600px;
   display: block;
 }
+
 
 
 
