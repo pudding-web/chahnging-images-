@@ -43,22 +43,7 @@
 }
 
 
-.field-grey {
-  filter: grayscale(100%) brightness(90%) contrast(110%);
-  width: 600px;
-  display: block;
-}
-
-
-.tictactoe-grey {
-  filter: grayscale(100%) brightness(90%) contrast(110%);
-  width: 200px;
-  display: inline-block;
-}
-
-
-
-.final-composite {
+.final-frame {
   display: inline-block;
   filter: grayscale(100%) brightness(90%) contrast(110%);
 }
@@ -77,14 +62,16 @@
 .column {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .ttt {
-  width: 80px;  
+  width: 65px;   /* adjust if you need bigger or smaller */
 }
 
 .final-field {
-  width: 500px; 
+  width: 600px;   /* this EXACT width matches your sample */
+  display: block;
   margin: 0 10px;
 }
 
