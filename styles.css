@@ -1,7 +1,9 @@
+/* BUTTERFLY */
 .invert {
   filter: invert(100%);
 }
 
+/* PENGUIN */
 .penguin-frame {
   padding: 1px;
   background: white;
@@ -17,6 +19,7 @@
   filter: sepia(85%) brightness(98%) contrast(100%) saturate(98%);
 }
 
+/* DINO */
 .dino-blue {
   filter:
     hue-rotate(100deg)
@@ -25,6 +28,7 @@
     drop-shadow(20px 20px 15px rgba(0,0,0,0.5));
 }
 
+/* SEAGULL */
 .seagull-box {
   width: 600px;
   padding: 40px;
@@ -38,27 +42,41 @@
   display: block;
 }
 
-/* ⭐ FINAL HEART BORDER ⭐ */
+/* === FINAL: FIELD WITH HEART/XO BORDER === */
+
 .final-frame {
   display: inline-block;
-
-  /* border thickness — controls how close border is */
-  border: 80px solid transparent;
-
-  /* ❤️ use the hearts tic-tac-toe image ❤️ */
-  border-image-source: url(images/tic-tac-toe.png);
-
-  /* slice determines how the border gets cut */
-  border-image-slice: 90;
-
-  /* repeat evenly around */
-  border-image-repeat: round;
-
-  /* grayscale to match sample */
   filter: grayscale(100%) brightness(90%) contrast(110%);
 }
 
+/* horizontal rows of tiles */
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+/* middle row containing left border + field + right border */
+.middle {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* vertical columns of tiles */
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* each tic-tac-toe tile (with heart) */
+.ttt {
+  width: 40px;        /* change this if you want the border thicker/thinner */
+}
+
+/* football field inside the frame */
 .final-field {
-  width: 600px;
+  width: 640px;       /* 16 tiles × 40px = 640px (matches your screenshot look) */
   display: block;
+  margin: 0 5px;
 }
