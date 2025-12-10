@@ -1,8 +1,9 @@
-
+/* Inverted butterfly */
 .invert {
   filter: invert(100%);
 }
 
+/* Penguins */
 .penguin-frame {
   padding: 1px;
   background: white;
@@ -18,7 +19,7 @@
   filter: sepia(85%) brightness(98%) contrast(100%) saturate(98%);
 }
 
-
+/* Dino */
 .dino-blue {
   filter:
     hue-rotate(100deg)
@@ -27,7 +28,7 @@
     drop-shadow(20px 20px 15px rgba(0,0,0,0.5));
 }
 
-
+/* Seagull gradient */
 .seagull-box {
   width: 600px;
   padding: 40px;
@@ -41,7 +42,7 @@
   display: block;
 }
 
-
+/* Individual greyscale images */
 .field-grey {
   width: 600px;
   filter: grayscale(100%) brightness(90%) contrast(110%);
@@ -54,6 +55,7 @@
   display: block;
 }
 
+/* === FINAL: football field with XO border === */
 
 .final-frame {
   display: inline-block;
@@ -78,11 +80,12 @@
 }
 
 .ttt {
-  width: 65px;     
+  width: 65px;        /* size of each tic-tac-toe tile */
 }
 
 .final-field {
-  width: 600px;    
+  width: 600px;       /* size of the football field */
   display: block;
-  margin: 0 10px;
+  margin: 0 10px;     /* small gap between field and side borders */
 }
+
