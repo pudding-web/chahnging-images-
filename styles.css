@@ -49,23 +49,21 @@
   display: block;
 }
 
-
 .field-frame {
   display: inline-block;
 
 
-  border: 70px solid transparent;
+  border: 45px solid transparent;
 
-
+ 
   border-image-source: url("images/tic-tac-toe.png");
 
- 
-  border-image-slice: 33;
+
+  border-image-slice: 80;
 
 
-  border-image-repeat: repeat;
+  border-image-repeat: round;
 
- 
   filter: grayscale(100%) brightness(90%) contrast(110%);
 }
 
@@ -73,5 +71,6 @@
   width: 600px;
   display: block;
 }
+
 
 
