@@ -1,94 +1,89 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>CSS Filters Assignment</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
+/* Invert butterfly */
+.invert {
+  filter: invert(100%);
+}
 
-<body>
+/* Penguin frame + effect */
+.penguin-frame {
+  padding: 1px;
+  background: white;
+  border: 0.5px solid black;
+  border-radius: 150%;
+  display: inline-block;
+}
 
-  <!-- Penguin -->
-  <div class="penguin-frame">
-    <img src="images/penguins.jpg" class="penguin-old" alt="vintage penguins">
-  </div>
+.penguin-old {
+  width: 450px;
+  border-radius: 150%;
+  object-fit: cover;
+  filter: sepia(85%) brightness(98%) contrast(100%) saturate(98%);
+}
 
-  <br><br>
+/* Blue dinosaur with shadow */
+.dino-blue {
+  filter:
+    hue-rotate(100deg)
+    saturate(150%)
+    brightness(95%)
+    drop-shadow(20px 20px 15px rgba(0,0,0,0.5));
+}
 
-  <!-- Grey Football Field (alone) -->
-  <img src="images/football_field.jpg" class="field-grey" alt="grey football field">
+/* Seagull gradient card */
+.seagull-box {
+  width: 600px;
+  padding: 40px;
+  background: linear-gradient(to bottom right, #b0b8ff, #ffffff);
+  border-radius: 10px;
+  box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.25);
+}
 
-  <br><br>
+.seagull {
+  width: 100%;
+  display: block;
+}
 
-  <!-- Grey Tic Tac Toe (alone) -->
-  <img src="images/tic-tac-toe.png" class="tictactoe-grey" alt="grey tic tac toe">
+/* Standalone grey football field */
+.field-grey {
+  filter: grayscale(100%) brightness(90%) contrast(110%);
+  width: 600px;
+  display: block;
+}
 
-  <br><br>
+/* Standalone grey tic tac toe image */
+.tictactoe-grey {
+  filter: grayscale(100%) brightness(90%) contrast(110%);
+  width: 200px;
+  display: inline-block;
+}
 
-  <!-- Butterfly -->
-  <img src="images/butterfly.jpg" class="invert" alt="butterfly">
+/* FINAL COMPOSITE (field + tic tac toe border) */
 
-  <br><br>
+.final-composite {
+  display: inline-block;
+  filter: grayscale(100%) brightness(90%) contrast(110%);
+}
 
-  <!-- Dinosaur -->
-  <img src="images/dinosaur.png" class="dino-blue" alt="blue dinosaur">
+.row {
+  display: flex;
+  justify-content: center;
+}
 
-  <br><br>
+.middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  <!-- Seagull Gradient -->
-  <div class="seagull-box">
-    <img src="images/seagull.png" class="seagull" alt="seagull">
-  </div>
+.column {
+  display: flex;
+  flex-direction: column;
+}
 
-  <br><br>
+.ttt {
+  width: 80px;   /* tic tac toe size */
+}
 
-  <!-- FINAL COMPOSITE: Field + Tic Tac Toe Border -->
-  <div class="final-composite">
-    
-    <!-- Top Row -->
-    <div class="row">
-      <img src="images/tic-tac-toe.png" class="ttt">
-      <img src="images/tic-tac-toe.png" class="ttt">
-      <img src="images/tic-tac-toe.png" class="ttt">
-      <img src="images/tic-tac-toe.png" class="ttt">
-      <img src="images/tic-tac-toe.png" class="ttt">
-      <img src="images/tic-tac-toe.png" class="ttt">
-      <img src="images/tic-tac-toe.png" class="ttt">
-      <img src="images/tic-tac-toe.png" class="ttt">
-    </div>
-
-    <!-- Middle with Field -->
-    <div class="middle">
-      <div class="column">
-        <img src="images/tic-tac-toe.png" class="ttt">
-        <img src="images/tic-tac-toe.png" class="ttt">
-        <img src="images/tic-tac-toe.png" class="ttt">
-        <img src="images/tic-tac-toe.png" class="ttt">
-      </div>
-
-      <img src="images/football_field.jpg" class="field-grey final-field" alt="grey football field in frame">
-
-      <div class="column">
-        <img src="images/tic-tac-toe.png" class="ttt">
-        <img src="images/tic-tac-toe.png" class="ttt">
-        <img src="images/tic-tac-toe.png" class="ttt">
-        <img src="images/tic-tac-toe.png" class="ttt">
-      </div>
-    </div>
-
-    <!-- Bottom Row -->
-    <div class="row">
-      <img src="images/tic-tac-toe.png" class="ttt">
-      <img src="images/tic-tac-toe.png" class="ttt">
-      <img src="images/tic-tac-toe.png" class="ttt">
-      <img src="images/tic-tac-toe.png" class="ttt">
-      <img src="images/tic-tac-toe.png" class="ttt">
-      <img src="images/tic-tac-toe.png" class="ttt">
-      <img src="images/tic-tac-toe.png" class="ttt">
-      <img src="images/tic-tac-toe.png" class="ttt">
-    </div>
-
-  </div>
-
-</body>
-</html>
+.final-field {
+  width: 500px;  /* field size in composite */
+  margin: 0 10px;
+}
