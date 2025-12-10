@@ -1,9 +1,8 @@
-/* Inverted butterfly */
 .invert {
   filter: invert(100%);
 }
 
-/* Penguins */
+/* Penguin */
 .penguin-frame {
   padding: 1px;
   background: white;
@@ -28,7 +27,7 @@
     drop-shadow(20px 20px 15px rgba(0,0,0,0.5));
 }
 
-/* Seagull gradient */
+/* Seagull */
 .seagull-box {
   width: 600px;
   padding: 40px;
@@ -42,57 +41,20 @@
   display: block;
 }
 
-/* Standalone grayscale examples */
-.field-grey {
-  width: 600px;
-  filter: grayscale(100%) brightness(90%) contrast(110%);
-  display: block;
-}
-
-.tictactoe-grey {
-  width: 200px;
-  filter: grayscale(100%) brightness(90%) contrast(110%);
-  display: block;
-}
-
-/* ==== FINAL: football field with XO border ==== */
-
+/* FINAL BORDER FIELD */
 .final-frame {
   display: inline-block;
+  padding: 25px;
+  border: 60px solid transparent;
+  border-image: url(images/tic-tac-toe.png) 33 round;
   filter: grayscale(100%) brightness(90%) contrast(110%);
 }
 
-/* top & bottom rows of border */
-.row {
-  display: flex;
-  justify-content: center;
-}
-
-/* middle row: left border, field, right border */
-.middle {
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-}
-
-/* left/right border columns */
-.column {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-/* size of each tic-tac-toe tile */
-.ttt {
-  width: 50px;     /* adjust up/down if you want the border thicker or thinner */
-}
-
-/* football field size inside the frame */
 .final-field {
-  width: 500px;    /* matches 10 tiles of 50px = 500px */
+  width: 600px;
   display: block;
-  margin: 0 5px;
 }
+
 
 
 
