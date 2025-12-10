@@ -1,105 +1,94 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-
-.invert {
-  filter: invert(100%);
-}
-
-
-.penguin-frame {
-  padding: 1px;
-  background: white;
-  border: .5px solid black;
-  border-radius: 150%;
-  display: inline-block;
-}
-
-.penguin-old {
-  width: 450px;
-  border-radius: 150%;
-  object-fit: cover;
-  filter: sepia(85%) brightness(98%) contrast(100%) saturate(98%);
-}
-
-
-.dino-blue {
-  filter:
-    hue-rotate(100deg)
-    saturate(150%)
-    brightness(95%)
-    drop-shadow(20px 20px 15px rgba(0,0,0,0.5));
-}
-
-
-.seagull-box {
-  width: 600px;
-  padding: 40px;
-  background: linear-gradient(to bottom right, #b0b8ff, #ffffff);
-  border-radius: 10px;
-  box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.25);
-}
-
-.seagull {
-  width: 100%;
-  display: block;
-}
-
-
-.field-grey {
-  filter: grayscale(100%) brightness(90%) contrast(110%);
-  width: 600px;
-  display: block;
-}
-
-
-.tictactoe-grey {
-  filter: grayscale(100%) brightness(90%) contrast(110%);
-  width: 200px;
-  display: inline-block;
-}
-
-</style>
+  <meta charset="UTF-8">
+  <title>CSS Filters Assignment</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
+  <!-- Penguin -->
+  <div class="penguin-frame">
+    <img src="images/penguins.jpg" class="penguin-old" alt="vintage penguins">
+  </div>
 
-<div class="penguin-frame">
-  <img src="images/penguins.jpg" class="penguin-old" alt="vintage penguins">
-</div>
+  <br><br>
 
-<br><br>
+  <!-- Grey Football Field (alone) -->
+  <img src="images/football_field.jpg" class="field-grey" alt="grey football field">
 
+  <br><br>
 
-<h3>Football Field Test:</h3>
-<img src="images/football_field.jpg" class="field-grey" alt="grey football field">
+  <!-- Grey Tic Tac Toe (alone) -->
+  <img src="images/tic-tac-toe.png" class="tictactoe-grey" alt="grey tic tac toe">
 
+  <br><br>
 
-<br><br>
+  <!-- Butterfly -->
+  <img src="images/butterfly.jpg" class="invert" alt="butterfly">
 
+  <br><br>
 
-<h3>Tic Tac Toe Test:</h3>
-<img src="images/tic-tac-toe.png" class="tictactoe-grey" alt="grey tic tac toe">
+  <!-- Dinosaur -->
+  <img src="images/dinosaur.png" class="dino-blue" alt="blue dinosaur">
 
+  <br><br>
 
-<br><br>
+  <!-- Seagull Gradient -->
+  <div class="seagull-box">
+    <img src="images/seagull.png" class="seagull" alt="seagull">
+  </div>
 
+  <br><br>
 
-<img src="images/butterfly.jpg" class="invert" alt="butterfly">
+  <!-- FINAL COMPOSITE: Field + Tic Tac Toe Border -->
+  <div class="final-composite">
+    
+    <!-- Top Row -->
+    <div class="row">
+      <img src="images/tic-tac-toe.png" class="ttt">
+      <img src="images/tic-tac-toe.png" class="ttt">
+      <img src="images/tic-tac-toe.png" class="ttt">
+      <img src="images/tic-tac-toe.png" class="ttt">
+      <img src="images/tic-tac-toe.png" class="ttt">
+      <img src="images/tic-tac-toe.png" class="ttt">
+      <img src="images/tic-tac-toe.png" class="ttt">
+      <img src="images/tic-tac-toe.png" class="ttt">
+    </div>
 
-<br><br>
+    <!-- Middle with Field -->
+    <div class="middle">
+      <div class="column">
+        <img src="images/tic-tac-toe.png" class="ttt">
+        <img src="images/tic-tac-toe.png" class="ttt">
+        <img src="images/tic-tac-toe.png" class="ttt">
+        <img src="images/tic-tac-toe.png" class="ttt">
+      </div>
 
+      <img src="images/football_field.jpg" class="field-grey final-field" alt="grey football field in frame">
 
-<img src="images/dinosaur.png" class="dino-blue" alt="blue dinosaur">
+      <div class="column">
+        <img src="images/tic-tac-toe.png" class="ttt">
+        <img src="images/tic-tac-toe.png" class="ttt">
+        <img src="images/tic-tac-toe.png" class="ttt">
+        <img src="images/tic-tac-toe.png" class="ttt">
+      </div>
+    </div>
 
-<br><br>
+    <!-- Bottom Row -->
+    <div class="row">
+      <img src="images/tic-tac-toe.png" class="ttt">
+      <img src="images/tic-tac-toe.png" class="ttt">
+      <img src="images/tic-tac-toe.png" class="ttt">
+      <img src="images/tic-tac-toe.png" class="ttt">
+      <img src="images/tic-tac-toe.png" class="ttt">
+      <img src="images/tic-tac-toe.png" class="ttt">
+      <img src="images/tic-tac-toe.png" class="ttt">
+      <img src="images/tic-tac-toe.png" class="ttt">
+    </div>
 
-
-<div class="seagull-box">
-  <img src="images/seagull.png" class="seagull" alt="seagull">
-</div>
+  </div>
 
 </body>
 </html>
