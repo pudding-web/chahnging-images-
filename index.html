@@ -7,7 +7,6 @@
   filter: invert(100%);
 }
 
-
 .penguin-frame {
   padding: 1px;
   background: white;
@@ -23,6 +22,7 @@
   filter: sepia(85%) brightness(98%) contrast(100%) saturate(98%);
 }
 
+
 .dino-blue {
   filter:
     hue-rotate(100deg)
@@ -33,16 +33,29 @@
 
 
 .seagull-box {
-  width: 600px;              
-  padding: 40px;              
+  width: 600px;
+  padding: 40px;
   background: linear-gradient(to bottom right, #b0b8ff, #ffffff);
-  border-radius: 10px;        
-  box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.25); 
+  border-radius: 10px;
+  box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.25);
 }
 
 .seagull {
-  width: 100%;               
-  display: block;             
+  width: 100%;
+  display: block;
+}
+
+
+.field-grey {
+  filter: grayscale(100%) brightness(90%) contrast(110%);
+  width: 600px;
+  display: block;
+}
+
+.tictactoe-grey {
+  filter: grayscale(100%) brightness(90%) contrast(110%);
+  width: 200px;
+  display: inline-block;
 }
 
 </style>
@@ -50,10 +63,19 @@
 
 <body>
 
-
 <div class="penguin-frame">
   <img src="images/penguins.jpg" class="penguin-old" alt="vintage penguins">
 </div>
+
+<br><br>
+
+
+<img src="images/football_field.jpg" class="field-grey" alt="grey football field">
+
+<br><br>
+
+
+<img src="images/tic-tac-toe.png" class="tictactoe-grey" alt="grey tic tac toe">
 
 <br><br>
 
@@ -74,30 +96,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
