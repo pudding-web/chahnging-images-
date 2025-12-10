@@ -1,3 +1,4 @@
+
 .invert {
   filter: invert(100%);
 }
@@ -41,43 +42,36 @@
   display: block;
 }
 
-
-.field-grey {
-  filter: grayscale(100%) brightness(90%) contrast(110%);
-  width: 600px;
-  display: block;
-}
-
+.field-grey,
 .tictactoe-grey {
+  width: 600px;
   filter: grayscale(100%) brightness(90%) contrast(110%);
-  width: 120px;
   display: block;
 }
-
 
 
 .field-frame {
-
-  padding: 65px;
-
-
-  background:
-    url("images/tic-tac-toe.png") top left repeat-x,
-    url("images/tic-tac-toe.png") bottom left repeat-x,
-    url("images/tic-tac-toe.png") top left repeat-y,
-    url("images/tic-tac-toe.png") top right repeat-y;
-
-
-  background-size: 65px 65px;
-
   display: inline-block;
 
 
+  border: 70px solid transparent;
+
+
+  border-image-source: url("images/tic-tac-toe.png");
+
+ 
+  border-image-slice: 33;
+
+
+  border-image-repeat: repeat;
+
+ 
   filter: grayscale(100%) brightness(90%) contrast(110%);
 }
 
 .field-border {
-  width: 600px;        
+  width: 600px;
   display: block;
 }
+
 
