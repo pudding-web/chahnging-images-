@@ -1,4 +1,3 @@
-
 .invert {
   filter: invert(100%);
 }
@@ -43,35 +42,42 @@
 }
 
 
-.final-frame {
+.field-grey {
+  filter: grayscale(100%) brightness(90%) contrast(110%);
+  width: 600px;
+  display: block;
+}
+
+.tictactoe-grey {
+  filter: grayscale(100%) brightness(90%) contrast(110%);
+  width: 120px;
+  display: block;
+}
+
+
+
+.field-frame {
+
+  padding: 65px;
+
+
+  background:
+    url("images/tic-tac-toe.png") top left repeat-x,
+    url("images/tic-tac-toe.png") bottom left repeat-x,
+    url("images/tic-tac-toe.png") top left repeat-y,
+    url("images/tic-tac-toe.png") top right repeat-y;
+
+
+  background-size: 65px 65px;
+
   display: inline-block;
+
+
   filter: grayscale(100%) brightness(90%) contrast(110%);
 }
 
-.row {
-  display: flex;
-  justify-content: center;
-}
-
-.middle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.ttt {
-  width: 65px;   /* adjust if you need bigger or smaller */
-}
-
-.final-field {
-  width: 600px;   /* this EXACT width matches your sample */
+.field-border {
+  width: 600px;        
   display: block;
-  margin: 0 10px;
 }
 
