@@ -7,19 +7,21 @@
   filter: invert(100%);
 }
 
-.penguin-old {
-  width: 300px; 
-  aspect-ratio: 1 / 0.75; 
-  object-fit: cover;
 
-  filter: sepia(90%) brightness(110%) contrast(85%) saturate(60%);
-
-  padding: 15px;  
-  background: #f5e9d6;   /* border color */
-  border-radius: 50%;    /* oval shape */
-
+.penguin-frame {
+  background: #f5e9d6;
+  padding: 20px;
+  border-radius: 50%;
   display: inline-block;
 }
+
+.penguin-old {
+  width: 300px;
+  border-radius: 50%; 
+  object-fit: cover;
+  filter: sepia(90%) brightness(110%) contrast(85%) saturate(60%);
+}
+
 
 .dino-blue {
   filter:
@@ -28,6 +30,7 @@
     brightness(95%)
     drop-shadow(20px 20px 15px rgba(0,0,0,0.5));
 }
+
 
 .seagull-box {
   width: 600px;              
@@ -47,11 +50,23 @@
 
 <body>
 
-<img src="images/penguins.jpg" class="penguin-old" alt="vintage penguins">
-  
+
+<div class="penguin-frame">
+  <img src="images/penguins.jpg" class="penguin-old" alt="vintage penguins">
+</div>
+
+<br><br>
+
+
 <img src="images/butterfly.jpg" class="invert" alt="butterfly">
 
+<br><br>
+
+
 <img src="images/dinosaur.png" class="dino-blue" alt="blue dinosaur">
+
+<br><br>
+
 
 <div class="seagull-box">
   <img src="images/seagull.png" class="seagull" alt="seagull">
