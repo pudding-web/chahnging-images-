@@ -2,7 +2,6 @@
   filter: invert(100%);
 }
 
-/* Penguin */
 .penguin-frame {
   padding: 1px;
   background: white;
@@ -18,7 +17,6 @@
   filter: sepia(85%) brightness(98%) contrast(100%) saturate(98%);
 }
 
-/* Dino */
 .dino-blue {
   filter:
     hue-rotate(100deg)
@@ -27,7 +25,6 @@
     drop-shadow(20px 20px 15px rgba(0,0,0,0.5));
 }
 
-/* Seagull */
 .seagull-box {
   width: 600px;
   padding: 40px;
@@ -41,12 +38,14 @@
   display: block;
 }
 
-/* FINAL BORDER FIELD */
+/* ⭐ FIXED BORDER IMAGE FRAME ⭐ */
 .final-frame {
   display: inline-block;
-  padding: 25px;
-  border: 60px solid transparent;
-  border-image: url(images/tic-tac-toe.png) 33 round;
+  padding: 0;
+  border: 70px solid transparent;
+  border-image-source: url(images/tic-tac-toe.png);
+  border-image-slice: 33;
+  border-image-repeat: round;
   filter: grayscale(100%) brightness(90%) contrast(110%);
 }
 
@@ -54,10 +53,3 @@
   width: 600px;
   display: block;
 }
-
-
-
-
-
-
-
