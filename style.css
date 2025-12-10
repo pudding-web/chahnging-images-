@@ -1,9 +1,9 @@
-/* Invert butterfly */
+
 .invert {
   filter: invert(100%);
 }
 
-/* Penguin frame + effect */
+
 .penguin-frame {
   padding: 1px;
   background: white;
@@ -19,7 +19,7 @@
   filter: sepia(85%) brightness(98%) contrast(100%) saturate(98%);
 }
 
-/* Blue dinosaur with shadow */
+
 .dino-blue {
   filter:
     hue-rotate(100deg)
@@ -28,7 +28,7 @@
     drop-shadow(20px 20px 15px rgba(0,0,0,0.5));
 }
 
-/* Seagull gradient card */
+
 .seagull-box {
   width: 600px;
   padding: 40px;
@@ -42,21 +42,21 @@
   display: block;
 }
 
-/* Standalone grey football field */
+
 .field-grey {
   filter: grayscale(100%) brightness(90%) contrast(110%);
   width: 600px;
   display: block;
 }
 
-/* Standalone grey tic tac toe image */
+
 .tictactoe-grey {
   filter: grayscale(100%) brightness(90%) contrast(110%);
   width: 200px;
   display: inline-block;
 }
 
-/* FINAL COMPOSITE (field + tic tac toe border) */
+
 
 .final-composite {
   display: inline-block;
@@ -80,10 +80,11 @@
 }
 
 .ttt {
-  width: 80px;   /* tic tac toe size */
+  width: 80px;  
 }
 
 .final-field {
-  width: 500px;  /* field size in composite */
+  width: 500px; 
   margin: 0 10px;
 }
+
