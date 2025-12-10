@@ -3,7 +3,6 @@
   filter: invert(100%);
 }
 
-
 .penguin-frame {
   padding: 1px;
   background: white;
@@ -42,35 +41,48 @@
   display: block;
 }
 
-.field-grey,
+
+.field-grey {
+  width: 600px;
+  filter: grayscale(100%) brightness(90%) contrast(110%);
+  display: block;
+}
+
 .tictactoe-grey {
-  width: 600px;
+  width: 200px;
   filter: grayscale(100%) brightness(90%) contrast(110%);
   display: block;
 }
 
-.field-frame {
+
+.final-frame {
   display: inline-block;
-
-
-  border: 45px solid transparent;
-
- 
-  border-image-source: url("images/tic-tac-toe.png");
-
-
-  border-image-slice: 80;
-
-
-  border-image-repeat: round;
-
   filter: grayscale(100%) brightness(90%) contrast(110%);
 }
 
-.field-border {
-  width: 600px;
-  display: block;
+.row {
+  display: flex;
+  justify-content: center;
 }
 
+.middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
+.ttt {
+  width: 65px;     
+}
+
+.final-field {
+  width: 600px;    
+  display: block;
+  margin: 0 10px;
+}
