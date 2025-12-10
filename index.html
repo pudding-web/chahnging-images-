@@ -2,9 +2,19 @@
 <html>
 <head>
 <style>
+.invert {
+  filter: invert(100%);
+}
+
+.dino-blue {
+  filter:
+    hue-rotate(100deg)
+    saturate(150%)
+    brightness(95%)
+    drop-shadow(20px 20px 15px rgba(0,0,0,0.5));
+}
 
 
-.img-bg {
 .seagull-box {
   width: 600px;              
   padding: 40px;              
@@ -17,54 +27,18 @@
   width: 100%;               
   display: block;             
 }
-
-  
-.invert {
-  filter: invert(100%);
-}
-
-
-.dino-blue {
-  filter:
-    hue-rotate(100deg)
-    saturate(150%)
-    brightness(95%)
-    drop-shadow(20px 20px 15px rgba(0,0,0,0.5));
-}
-
 </style>
 </head>
 
-</body>
-<img src="images/butterfly.jpg" class="invert" alt="butterfly">
+<body>
 
+<img src="images/butterfly.jpg" class="invert" alt="butterfly">
 
 <img src="images/dinosaur.png" class="dino-blue" alt="blue dinosaur">
 
-  
-<div class="img-bg">
-  <img src="images/seagull.png" alt="seagull">
+<div class="seagull-box">
+  <img src="images/seagull.png" class="seagull" alt="seagull">
 </div>
 
-  
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
