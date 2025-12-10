@@ -62,7 +62,7 @@
   display: inline-block;
 
   /* thickness of the border: this should match the tic-tac-toe tile size */
-  padding: 100px;
+  padding: 200px;
 
   /* 4 backgrounds: top, bottom, left, right */
   background:
@@ -83,6 +83,7 @@
   width: 600px;
   display: block;
 }
+
 
 
 
