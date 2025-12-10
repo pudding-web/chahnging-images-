@@ -38,14 +38,23 @@
   display: block;
 }
 
-/* ⭐ FIXED BORDER IMAGE FRAME ⭐ */
+/* ⭐ FINAL HEART BORDER ⭐ */
 .final-frame {
   display: inline-block;
-  padding: 0;
-  border: 70px solid transparent;
+
+  /* border thickness — controls how close border is */
+  border: 80px solid transparent;
+
+  /* ❤️ use the hearts tic-tac-toe image ❤️ */
   border-image-source: url(images/tic-tac-toe.png);
-  border-image-slice: 33;
+
+  /* slice determines how the border gets cut */
+  border-image-slice: 90;
+
+  /* repeat evenly around */
   border-image-repeat: round;
+
+  /* grayscale to match sample */
   filter: grayscale(100%) brightness(90%) contrast(110%);
 }
 
