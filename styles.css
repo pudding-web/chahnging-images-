@@ -34,7 +34,7 @@
   padding: 40px;
   background: linear-gradient(to bottom right, #b0b8ff, #ffffff);
   border-radius: 10px;
-  box-shadow: 15px 15px 25px rgba(0,0,0,0.25);
+  box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.25);
 }
 
 .seagull {
@@ -42,7 +42,7 @@
   display: block;
 }
 
-/* Standalone greyscale examples */
+/* Standalone grayscale examples */
 .field-grey {
   width: 600px;
   filter: grayscale(100%) brightness(90%) contrast(110%);
@@ -55,33 +55,43 @@
   display: block;
 }
 
-/* === FINAL: football field with XO BORDER using CSS backgrounds === */
+/* ==== FINAL: football field with XO border ==== */
 
-/* This wrapper draws the XO border */
-.field-frame {
+.final-frame {
   display: inline-block;
-
-  /* thickness of the border: this should match the tic-tac-toe tile size */
-  padding: 100px;
-
-  /* 4 backgrounds: top, bottom, left, right */
-  background:
-    url("images/tic-tac-toe.png") top center repeat-x,     /* top border */
-    url("images/tic-tac-toe.png") bottom center repeat-x,  /* bottom border */
-    url("images/tic-tac-toe.png") center left repeat-y,    /* left border */
-    url("images/tic-tac-toe.png") center right repeat-y;   /* right border */
-
-  /* size of each tile – tweak if you want them bigger/smaller */
-  background-size: 300px 300px;
-
-  /* make the whole frame greyscale */
   filter: grayscale(100%) brightness(90%) contrast(110%);
 }
 
-/* the field inside the frame */
-.field-border {
-  width: 600px;
+/* top & bottom rows of border */
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+/* middle row: left border, field, right border */
+.middle {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* left/right border columns */
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* size of each tic-tac-toe tile */
+.ttt {
+  width: 50px;     /* adjust up/down if you want the border thicker or thinner */
+}
+
+/* football field size inside the frame */
+.final-field {
+  width: 500px;    /* matches 10 tiles of 50px = 500px */
   display: block;
+  margin: 0 5px;
 }
 
 
