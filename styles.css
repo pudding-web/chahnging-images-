@@ -34,7 +34,7 @@
   padding: 40px;
   background: linear-gradient(to bottom right, #b0b8ff, #ffffff);
   border-radius: 10px;
-  box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.25);
+  box-shadow: 15px 15px 25px rgba(0,0,0,0.25);
 }
 
 .seagull {
@@ -42,7 +42,7 @@
   display: block;
 }
 
-/* Individual greyscale images */
+/* Standalone greyscale examples */
 .field-grey {
   width: 600px;
   filter: grayscale(100%) brightness(90%) contrast(110%);
@@ -55,37 +55,31 @@
   display: block;
 }
 
-/* === FINAL: football field with XO border === */
+/* === FINAL: football field with XO BORDER using CSS backgrounds === */
 
-.final-frame {
+/* This wrapper draws the XO border */
+.field-frame {
   display: inline-block;
+
+  /* thickness of the border: this should match the tic-tac-toe tile size */
+  padding: 64px;
+
+  /* 4 backgrounds: top, bottom, left, right */
+  background:
+    url("images/tic-tac-toe.png") top center repeat-x,     /* top border */
+    url("images/tic-tac-toe.png") bottom center repeat-x,  /* bottom border */
+    url("images/tic-tac-toe.png") center left repeat-y,    /* left border */
+    url("images/tic-tac-toe.png") center right repeat-y;   /* right border */
+
+  /* size of each tile – tweak if you want them bigger/smaller */
+  background-size: 64px 64px;
+
+  /* make the whole frame greyscale */
   filter: grayscale(100%) brightness(90%) contrast(110%);
 }
 
-.row {
-  display: flex;
-  justify-content: center;
-}
-
-.middle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.ttt {
-  width: 65px;        /* size of each tic-tac-toe tile */
-}
-
-.final-field {
-  width: 600px;       /* size of the football field */
+/* the field inside the frame */
+.field-border {
+  width: 600px;
   display: block;
-  margin: 0 10px;     /* small gap between field and side borders */
 }
-
