@@ -62,7 +62,7 @@
   display: inline-block;
 
   /* thickness of the border: this should match the tic-tac-toe tile size */
-  padding: 200px;
+  padding: 100px;
 
   /* 4 backgrounds: top, bottom, left, right */
   background:
@@ -72,7 +72,7 @@
     url("images/tic-tac-toe.png") center right repeat-y;   /* right border */
 
   /* size of each tile – tweak if you want them bigger/smaller */
-  background-size: 100px 100px;
+  background-size: 200px 200px;
 
   /* make the whole frame greyscale */
   filter: grayscale(100%) brightness(90%) contrast(110%);
@@ -83,6 +83,7 @@
   width: 600px;
   display: block;
 }
+
 
 
 
