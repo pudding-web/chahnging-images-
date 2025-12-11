@@ -78,7 +78,7 @@
   margin: 0 5px;
 }
 
-.theater-stage {
+.image-text {
   position: relative;
   display: inline-block;
 }
@@ -98,4 +98,5 @@
   -webkit-filter: blur(3px);
   filter: blur(3px);
 }
+
 
